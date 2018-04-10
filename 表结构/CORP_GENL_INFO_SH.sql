@@ -1,0 +1,36 @@
+#drop table if exists CORP_GENL_INFO_SH;
+
+create table CORP_GENL_INFO_SH
+(
+dte varchar(8) not null,
+corpid varchar(6) not null,
+stockid_a varchar(6),
+stockid_b varchar(6),
+chgbondabbr varchar(20),
+chgbondid varchar(6),
+corpabbr_cn varchar(64),
+corpabbr_en varchar(64),
+corpfull_cn varchar(256),
+corpfull_en varchar(256),
+regaddr varchar(256),
+postaddr varchar(256),
+zipcode varchar(6),
+legalrepr varchar(64),
+email varchar(128),
+phone varchar(64),
+website varchar(128),
+csrcdes varchar(64),
+csrcgreat varchar(64),
+csrcmid varchar(64),
+ssedesc varchar(64),
+province varchar(32),
+state_a varchar(10),
+state_b varchar(10),
+sh180sample varchar(10),
+foreignlisting varchar(10),
+foreignlistingaddr varchar(256),
+datasource varchar(10) not null,
+lastupdatetime datetime(6),
+remarks varchar(256),
+primary key(dte, corpid, datasource)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
