@@ -1,0 +1,1 @@
+CALL `stock`.`genSeq`();
